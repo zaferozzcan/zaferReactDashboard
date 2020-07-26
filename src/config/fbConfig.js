@@ -3,15 +3,16 @@ import "firebase/firestore";
 import "firebase/auth";
 
 var config = {
-  apiKey: "AIzaSyDv2azdSo_ac4mGso94mY00H3_PILhaSq8",
-  authDomain: "zafersdasboard.firebaseapp.com",
-  databaseURL: "https://zafersdasboard.firebaseio.com",
-  projectId: "zafersdasboard",
-  storageBucket: "zafersdasboard.appspot.com",
-  messagingSenderId: "218806196632",
-  appId: "1:218806196632:web:7c12e14c51ef873854b3ed",
-  measurementId: "G-90Y9HQ76S8"
+  apiKey: "AIzaSyCt2BxPRcEhebajW2g8FHt0obpq6DXwxPQ",
+  authDomain: "zaferozcandash-f4157.firebaseapp.com",
+  databaseURL: "https://zaferozcandash-f4157.firebaseio.com",
+  projectId: "zaferozcandash-f4157",
+  storageBucket: "zaferozcandash-f4157.appspot.com",
+  messagingSenderId: "66304341535",
+  appId: "1:66304341535:web:a3514cd86de1a3a098872a",
+  measurementId: "G-VTDS1BG2M7"
 };
+
 firebase.initializeApp(config);
 firebase.firestore().settings({ timestampsInSnapshots: true });
 
