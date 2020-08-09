@@ -7,12 +7,12 @@ class CreateProject extends Component {
     title: "",
     content: ""
   };
-  handleChange = e => {
+  handleChange = (e) => {
     this.setState({
       [e.target.id]: e.target.value
     });
   };
-  handleSubmit = e => {
+  handleSubmit = (e) => {
     e.preventDefault();
     // console.log(this.state);
     this.props.createProject(this.state);
@@ -35,7 +35,9 @@ class CreateProject extends Component {
             <label htmlFor="content">Project Content</label>
           </div>
           <div className="input-field">
-            <button className="btn grey darken-2">Create</button>
+            <button onSubmit={this.handleSubmit} className="btn grey darken-2">
+              Create
+            </button>
           </div>
         </form>
       </div>
@@ -43,13 +45,10 @@ class CreateProject extends Component {
   }
 }
 
-const mapDispatchToProps = dispatch => {
+const mapDispatchToProps = (dispatch) => {
   return {
-    createProject: project => dispatch(createProject(project))
+    createProject: (project) => dispatch(createProject(project))
   };
 };
 
-export default connect(
-  null,
-  mapDispatchToProps
-)(CreateProject);
+export default connect(null, mapDispatchToProps)(CreateProject);
