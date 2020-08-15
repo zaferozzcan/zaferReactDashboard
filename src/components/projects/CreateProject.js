@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
-import createProject from "../../store/actions/projectActions";
+import { createProject } from "../../store/actions/projectActions";
 
 class CreateProject extends Component {
   state = {
@@ -16,6 +16,7 @@ class CreateProject extends Component {
     e.preventDefault();
     // console.log(this.state);
     this.props.createProject(this.state);
+    this.props.history.push("/");
   };
   render() {
     return (
@@ -31,13 +32,11 @@ class CreateProject extends Component {
               id="content"
               className="materialize-textarea"
               onChange={this.handleChange}
-            />
+            ></textarea>
             <label htmlFor="content">Project Content</label>
           </div>
           <div className="input-field">
-            <button onSubmit={this.handleSubmit} className="btn grey darken-2">
-              Create
-            </button>
+            <button className="btn pink lighten-1">Create</button>
           </div>
         </form>
       </div>

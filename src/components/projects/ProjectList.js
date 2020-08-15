@@ -1,15 +1,20 @@
 import React from "react";
-import ProjectSummary from "../projects/ProjectSummary";
+import ProjectSummary from "./ProjectSummary";
+import { Link } from "react-router-dom";
 
-function ProjectList(props) {
-  const projs = props.projects;
+const ProjectList = ({ projects }) => {
   return (
     <div className="project-list section">
-      {projs.map((item, index) => (
-        <ProjectSummary key={index} title={item.title} content={item.content} />
-      ))}
+      {projects &&
+        projects.map((project) => {
+          return (
+            <Link to={"/project/" + project.id} key={project.id}>
+              <ProjectSummary project={project} />
+            </Link>
+          );
+        })}
     </div>
   );
-}
+};
 
 export default ProjectList;
