@@ -3,14 +3,14 @@ import "firebase/firestore";
 import "firebase/auth";
 
 const config = {
-  apiKey: "AIzaSyC0nRgVVSymAR9teoPIT7F9pK3V7ik9FoY",
-  authDomain: "zaferdasboard.firebaseapp.com",
-  databaseURL: "https://zaferdasboard.firebaseio.com",
-  projectId: "zaferdasboard",
-  storageBucket: "zaferdasboard.appspot.com",
-  messagingSenderId: "1098778024388",
-  appId: "1:1098778024388:web:b23025a0014b148546ec91",
-  measurementId: "G-VTZSRM00S6"
+  apiKey: "AIzaSyCJdn1Yno42f2N64TrCIbJRFCKQRjNBnh8",
+  authDomain: "reactdashboard-d034f.firebaseapp.com",
+  databaseURL: "https://reactdashboard-d034f.firebaseio.com",
+  projectId: "reactdashboard-d034f",
+  storageBucket: "reactdashboard-d034f.appspot.com",
+  messagingSenderId: "628153226041",
+  appId: "1:628153226041:web:66f61da45208080a9c0ee8",
+  measurementId: "G-GVN286FBDV"
 };
 
 firebase.initializeApp(config);
