@@ -7,9 +7,9 @@ export const createProject = (project) => {
       .add({
         ...project,
         authorFirstName: "Zafer",
-        authorLastName: "Ozcan"
-        // authorId: 12345,
-        // createdAt: new Date()
+        authorLastName: "Ozcan",
+        authorId: 12345,
+        createdAt: new Date()
       })
       .then(() => {
         dispatch({ type: "CREATE_PROJECT_SUCCESS" });
