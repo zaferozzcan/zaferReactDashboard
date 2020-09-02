@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import SignedInLinks from "./SignedInLinks";
-import SignedOutLinks from "./SignedOutLinks";
+import SignedOutLinks from "./SignedOutLink";
 import { connect } from "react-redux";
 
 const Navbar = (props) => {
@@ -10,7 +10,7 @@ const Navbar = (props) => {
   const links = auth.uid ? <SignedInLinks /> : <SignedOutLinks />;
 
   return (
-    <nav className="nav-wrapper grey darken-3">
+    <nav className="nav-wrapper light-blue darken-3">
       <div className="container">
         <Link to="/" className="brand-logo">
           MarioPlan
