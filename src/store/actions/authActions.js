@@ -53,5 +53,3 @@ export const signUp = (newUser) => {
       });
   };
 };
-
-// kjkljkl
